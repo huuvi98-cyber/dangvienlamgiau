@@ -4,9 +4,9 @@ import { RefreshCw } from 'lucide-react';
 
 export const BreakthroughViewpointsSection: React.FC = () => {
   return (
-    <section id="quan-diem" className="scroll-mt-28 py-8 px-4 bg-red-600 border-2 border-red-700 rounded-2xl shadow-sm">
-      <div className="mb-6 border-b border-red-400/60 pb-3">
-        <h2 className="text-lg sm:text-xl font-black text-white uppercase tracking-tight flex items-center gap-2">
+    <section id="quan-diem" className="scroll-mt-28 py-8 px-4 bg-slate-100 border-2 border-red-600 rounded-2xl shadow-sm">
+      <div className="mb-6 border-b border-red-200 pb-3">
+        <h2 className="text-lg sm:text-xl font-black text-red-700 uppercase tracking-tight flex items-center gap-2">
           <span>5 QUAN ĐIỂM CHỈ ĐẠO ĐỘT PHÁ</span>
         </h2>
       </div>
@@ -36,9 +36,9 @@ const FlipCard: React.FC<{ viewpoint: BreakthroughViewpoint }> = ({ viewpoint })
         }`}
       >
         {/* MẶT 1 (FRONT SIDE): Nền đỏ, chữ vàng nhạt gần trắng, Tít lớn */}
-        <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-red-700 via-red-800 to-red-900 border-2 border-yellow-400/60 p-6 flex flex-col items-center justify-center text-center shadow-md [backface-visibility:hidden]">
+        <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-red-700 via-red-800 to-red-900 border border-red-500/40 p-6 flex flex-col items-center justify-center text-center shadow-md [backface-visibility:hidden]">
           {/* Top Badge Number */}
-          <div className="w-10 h-10 rounded-full bg-yellow-400 text-red-950 font-black text-lg flex items-center justify-center shadow-sm border border-yellow-200 mb-4">
+          <div className="w-10 h-10 rounded-full bg-yellow-200 text-red-950 font-black text-lg flex items-center justify-center shadow-sm mb-4">
             {viewpoint.id}
           </div>
 
@@ -51,7 +51,7 @@ const FlipCard: React.FC<{ viewpoint: BreakthroughViewpoint }> = ({ viewpoint })
         </div>
 
         {/* MẶT 2 (BACK SIDE): Nền đỏ, 1 kiểu chữ vàng nhạt, không bold, không nền, chỉ hiện nội dung */}
-        <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-red-800 via-red-900 to-red-950 border-2 border-yellow-400/60 p-6 flex items-center justify-center text-center text-amber-50 shadow-xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+        <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-red-800 via-red-900 to-red-950 border border-red-500/40 p-6 flex items-center justify-center text-center text-amber-50 shadow-xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
           <div className="text-sm sm:text-base leading-relaxed text-amber-50 font-normal px-1">
             {viewpoint.id === 1 && (
               <span>

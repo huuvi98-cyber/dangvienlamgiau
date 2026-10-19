@@ -28,7 +28,7 @@ export const GroupRulesSection: React.FC<GroupRulesSectionProps> = ({ searchQuer
         {filteredGroups.map((group, idx) => (
           <div
             key={group.id}
-            className="bg-white border border-teal-200 rounded-xl p-5 shadow-2xs flex flex-col justify-between print-card transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.03] hover:shadow-md cursor-pointer"
+            className="bg-white border border-teal-200 rounded-xl p-5 shadow-2xs flex flex-col justify-between print-card transition-all duration-300 transform hover:-translate-y-3 hover:scale-[1.20] hover:z-30 hover:shadow-2xl hover:border-teal-400 cursor-pointer"
           >
             <div>
               {/* Header Title with Number Badge */}

@@ -50,7 +50,7 @@ export const HexagonGraphicSection: React.FC<FourMainPillarsProps> = ({ onSelect
             <div
               key={pillar.id}
               onClick={() => onSelectSection(pillar.id)}
-              className="group cursor-pointer flex flex-col items-center transition-all duration-300 transform hover:-translate-y-1.5 hover:scale-[1.03] active:scale-95"
+              className="group cursor-pointer flex flex-col items-center transition-all duration-300 transform hover:-translate-y-3 hover:scale-[1.20] hover:z-30 active:scale-95"
             >
               {/* Solid Color Box Container with Rounded Top Corners Only (no bottom rounding) */}
               <div
