@@ -3,7 +3,7 @@ import { INVESTMENT_TYPES } from '../data/guidelinesData';
 
 export const InvestmentTypesMatrix: React.FC = () => {
   return (
-    <section id="loai-hinh" className="scroll-mt-28 py-6 px-4 bg-purple-600 border-2 border-purple-700 rounded-2xl shadow-sm">
+    <section id="loai-hinh" className="scroll-mt-28 py-6 px-4 bg-purple-600 rounded-2xl shadow-sm">
       {/* Section Title */}
       <h2 className="text-lg sm:text-xl font-black text-white uppercase tracking-tight border-b border-purple-400/60 pb-3 mb-6">
         4 LOẠI HÌNH ĐẦU TƯ KINH DOANH

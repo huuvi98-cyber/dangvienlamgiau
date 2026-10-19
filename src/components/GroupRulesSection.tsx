@@ -17,7 +17,7 @@ export const GroupRulesSection: React.FC<GroupRulesSectionProps> = ({ searchQuer
   });
 
   return (
-    <section id="nhom-doi-tuong" className="scroll-mt-28 py-6 px-4 bg-teal-600 border-2 border-teal-700 rounded-2xl shadow-sm">
+    <section id="nhom-doi-tuong" className="scroll-mt-28 py-6 px-4 bg-teal-600 rounded-2xl shadow-sm">
       {/* Section Title */}
       <h2 className="text-lg sm:text-xl font-black text-white uppercase tracking-tight border-b border-teal-400/60 pb-3 mb-6">
         QUY ĐỊNH CỤ THỂ TỪNG NHÓM ĐỐI TƯỢNG
@@ -46,10 +46,23 @@ export const GroupRulesSection: React.FC<GroupRulesSectionProps> = ({ searchQuer
                 </div>
               </div>
 
-              {/* Content Statement */}
-              <p className="text-slate-800 text-xs sm:text-sm leading-relaxed font-medium mt-2 whitespace-pre-line">
-                {group.shortDesc}
-              </p>
+              {/* Content Statement with Bullet Dots and Increased Line/Paragraph Spacing */}
+              <div className="space-y-2.5 mt-3">
+                {group.shortDesc
+                  .split('\n')
+                  .filter((line) => line.trim().length > 0)
+                  .map((line, lIdx) => {
+                    const cleanText = line.replace(/^[-\u2022]\s*/, '').trim();
+                    return (
+                      <div key={lIdx} className="flex items-start gap-2.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-teal-600 shrink-0 mt-1.5" />
+                        <p className="text-slate-800 text-xs sm:text-sm leading-relaxed font-medium flex-1">
+                          {cleanText}
+                        </p>
+                      </div>
+                    );
+                  })}
+              </div>
             </div>
           </div>
         ))}

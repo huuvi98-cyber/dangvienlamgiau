@@ -4,7 +4,7 @@ import { RefreshCw } from 'lucide-react';
 
 export const BreakthroughViewpointsSection: React.FC = () => {
   return (
-    <section id="quan-diem" className="scroll-mt-28 py-8 px-4 bg-slate-100 border-2 border-red-600 rounded-2xl shadow-sm">
+    <section id="quan-diem" className="scroll-mt-28 py-8 px-4 bg-slate-200 rounded-2xl shadow-sm">
       <div className="mb-6 border-b border-red-200 pb-3">
         <h2 className="text-lg sm:text-xl font-black text-red-700 uppercase tracking-tight flex items-center gap-2">
           <span>5 QUAN ĐIỂM CHỈ ĐẠO ĐỘT PHÁ</span>
