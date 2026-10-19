@@ -20,7 +20,7 @@ export const CorePrinciplesSection: React.FC = () => {
               <span className="w-7 h-7 rounded-full bg-amber-500 text-white font-black text-xs flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                 {principle.id}
               </span>
-              <div className="text-slate-900 text-sm leading-relaxed font-medium">
+              <div className="text-slate-900 text-base sm:text-[17px] leading-relaxed font-medium">
                 {principle.id === 1 && (
                   <span>
                     Tuân thủ những điều đảng viên không được làm, thực hành kinh doanh có trách nhiệm.

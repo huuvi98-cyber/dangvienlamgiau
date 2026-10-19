@@ -164,7 +164,7 @@ export const INVESTMENT_TYPES: InvestmentType[] = [
   {
     typeNumber: 2,
     code: 'Loại 2',
-    title: 'Đầu tư kinh doanh không thành lập tổ chức kinh tế và Không chi phối, quản lý, điều hành',
+    title: 'Đầu tư kinh doanh không thành lập tổ chức kinh tế và không chi phối, quản lý, điều hành',
     description: 'Đầu tư kinh doanh (góp vốn, mua cổ phần, chứng khoán, hợp đồng đầu tư...) nhưng không thành lập tổ chức kinh tế và không chi phối, không quản lý, điều hành.',
     riskLevel: 'Trung bình',
     badgeColor: 'bg-blue-100 text-blue-800 border-blue-300'
