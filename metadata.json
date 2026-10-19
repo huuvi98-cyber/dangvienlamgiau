@@ -1,0 +1,6 @@
+{
+  "name": "Quy Định Đảng Viên Đầu Tư Kinh Doanh",
+  "description": "Infographic tra cứu và tổng hợp Quy định về Đảng viên tham gia đầu tư, kinh doanh: 5 quan điểm đột phá, 5 nguyên tắc cốt lõi, 4 loại hình đầu tư và 6 nhóm đối tượng.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
